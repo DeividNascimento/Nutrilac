@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.CriarLoteActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative_criar_lote"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <Button
+                android:id="@+id/criar_lote_botao_confirma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:minWidth="200px"
+                android:text="Criar lote" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scroll_view_criar_lote"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/relative_criar_lote"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/criar_lote_orientacao"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:text="@string/criar_lote_orientacao"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/criar_lote_nome"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:hint="@string/criar_lote_nome"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/criar_lote_orientacao" />
+
+                <EditText
+                    android:id="@+id/criar_lote_quantidade"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/criar_lote_numero"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="@id/criar_lote_nome"
+                    app:layout_constraintStart_toStartOf="@id/criar_lote_nome"
+                    app:layout_constraintTop_toBottomOf="@+id/criar_lote_nome" />
+
+                <EditText
+                    android:id="@+id/criar_lote_peso"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="Peso"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="@id/criar_lote_quantidade"
+                    app:layout_constraintStart_toStartOf="@id/criar_lote_quantidade"
+                    app:layout_constraintTop_toBottomOf="@+id/criar_lote_quantidade" />
+
+                <EditText
+                    android:id="@+id/criar_lote_producao"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/criar_lote_producao_media"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="@id/criar_lote_peso"
+                    app:layout_constraintStart_toStartOf="@id/criar_lote_peso"
+                    app:layout_constraintTop_toBottomOf="@+id/criar_lote_peso" />
+
+                <EditText
+                    android:id="@+id/criar_lote_dias_gestacao"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:hint="Dias de gestação"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/criar_lote_producao"
+                    app:layout_constraintTop_toBottomOf="@+id/criar_lote_producao" />
+
+                <EditText
+                    android:id="@+id/criar_lote_numero_gestacoes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="Número de gestações"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="@+id/criar_lote_dias_gestacao"
+                    app:layout_constraintStart_toStartOf="@id/criar_lote_dias_gestacao"
+                    app:layout_constraintTop_toBottomOf="@+id/criar_lote_dias_gestacao" />
+
+                <EditText
+                    android:id="@+id/criar_lote_lactacao"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="Dias de lactação"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="@+id/criar_lote_numero_gestacoes"
+                    app:layout_constraintStart_toStartOf="@id/criar_lote_numero_gestacoes"
+                    app:layout_constraintTop_toBottomOf="@+id/criar_lote_numero_gestacoes" />
+
+                <TextView
+                    android:id="@+id/criar_lote_sistema_producao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Sistema de produção:"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/criar_lote_lactacao"
+                    app:layout_constraintTop_toBottomOf="@+id/criar_lote_lactacao" />
+
+                <RadioGroup
+                    android:id="@+id/criar_lote_radio_group_sistema_producao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@+id/criar_lote_sistema_producao"
+                    app:layout_constraintTop_toBottomOf="@+id/criar_lote_sistema_producao">
+
+                    <RadioButton
+                        android:id="@+id/criar_lote_radio1_engorda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pasto" />
+
+                    <RadioButton
+                        android:id="@+id/criar_lote_radio2_engorda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Confinamento" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/criar_lote_raca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Raça:"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@id/criar_lote_quantidade"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/criar_lote_radio_group_sistema_producao"
+                    app:layout_constraintTop_toBottomOf="@+id/criar_lote_radio_group_sistema_producao" />
+
+                <Spinner
+                    android:id="@+id/criar_lote_raca_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:entries="@array/array_criar_lote_raca"
+                    android:spinnerMode="dialog"
+                    app:layout_constraintStart_toStartOf="@id/criar_lote_raca"
+                    app:layout_constraintTop_toBottomOf="@+id/criar_lote_raca" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_drawer_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_inicio"
+            android:icon="@drawable/icon_inicio"
+            android:title="Início" />
+        <item
+            android:id="@+id/menu_relatorio"
+            android:icon="@drawable/icon_relatorio"
+            android:title="Relatório" />
+        <item
+            android:id="@+id/menu_atualizarValores"
+            android:icon="@drawable/ic_monetization"
+            android:title="Preço dos alimentos"/>
+        <item
+            android:id="@+id/menu_minhaconta"
+            android:icon="@drawable/icon_conta"
+            android:title="Minha conta" />
+        <item
+            android:id="@+id/menu_sairDaConta"
+            android:icon="@drawable/icon_sair"
+            android:title="Sair" />
+    </group>
+
+    <item android:title="Suporte">
+        <menu>
+            <item
+                android:id="@+id/menu_contato"
+                android:icon="@drawable/icon_email"
+                android:title="Contato" />
+            <item
+                android:id="@+id/menu_ajuda"
+                android:icon="@drawable/icon_ajuda"
+                android:title="Preciso de ajuda" />
+
+        </menu>
+    </item>
+
+</menu>

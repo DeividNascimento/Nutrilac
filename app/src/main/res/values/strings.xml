@@ -1,0 +1,70 @@
+<resources>
+
+    <string-array name="array_criar_lote_raca">
+        <item>Mestiço</item>
+        <item>Holandês</item>
+        <item>Girolando</item>
+        <item>Jersey</item>
+    </string-array>
+
+    <string name="app_name">Nutrilac</string>
+    <string name="mensagem_boas_vindas">Bem vindo(a) ao Nutrilac!</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="mensagem_criar_conta">Não possui uma conta?</string>
+    <string name="email">E-Mail</string>
+    <string name="confirmar_senha">Confirmar senha</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="nome">Nome</string>
+    <string name="criar_lote_orientacao">Preencha as informações abaixo para criar o lote</string>
+    <string name="criar_lote_nome">Nome do lote (Ex: Filhas da Mimosa)</string>
+    <string name="criar_lote_numero">Número de animais</string>
+    <string name="criar_lote_producao_media">Produção média em litros/dia</string>
+    <string name="criar_lote">Criar lote</string>
+    <string name="imagem_das_vacas">Imagem das vacas</string>
+    <string name="orientacao_login">Digite os seus dados para acessar a sua conta</string>
+    <string name="escolha_alimentos">Escolha os alimentos</string>
+    <string name="volumoso">Volumosos</string>
+    <string name="exemplos_volumoso">Exemplos: silagem, feno, capim verde picado</string>
+    <string name="suplementos">Suplemento</string>
+    <string name="concentrado">Concentrados</string>
+    <string name="exemplos_concentrado">Exemplos: energéticos e protéicos</string>
+    <string name="exemplos_suplemento">Exemplos: sal mineral, sal proteinado, ureia</string>
+    <string name="finalizar_escolha">Finalizar escolha</string>
+    <string name="criar_conta">Criar conta</string>
+    <string name="cadastro_orientacao">Digite as informações solicitadas abaixo para criar a sua conta</string>
+    <string name="fase_lactacao">Fase de lactação:</string>
+    <string name="opcao_a">Opção A</string>
+    <string name="opcao_c">Opção C</string>
+    <string name="opcao_b">Opção B</string>
+    <string name="relatorio">Relatório</string>
+    <string name="lotes">Lotes</string>
+    <string name="comprar_melhoria">Comprar melhoria</string>
+    <string name="obter_pacote">Obter pacote</string>
+    <string name="sair_da_minha_conta">Sair da minha conta</string>
+    <string name="meu_perfil">Meu perfil</string>
+    <string name="duvidas_frequentes">Dúvidas frequentes</string>
+    <string name="cabecalho_listagem_lotes">Cabeçalho de fundo verde para a tela de listagem dos lotes</string>
+    <string name="animais">Animais</string>
+    <string name="dieta">Dietas</string>
+    <string name="aditivosEminerais">Aditivos e Minerais</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="orientacao_inicio">Escolha uma das opções abaixo para seguir</string>
+    <string name="botao_contaExistente">Já tenho uma conta</string>
+    <string name="botao_entrarVisitante">Entrar como visitante</string>
+    <string name="orientacao_cadastrar_animal">Preencha as informações abaixo para cadastrar o animal</string>
+    <string name="nRegistro">Número de registro</string>
+    <string name="peso">Peso</string>
+    <string name="lote">Lote</string>
+    <string name="descricaoCabecalho">Cabeçalho de fundo verde para a tela de listagem de animais cadastrados</string>
+    <string name="cadastrar_animal">Cadastrar animal</string>
+    <string name="selecioneConcentrados">Selecione os concentrados</string>
+    <string name="selecioneSuplementos">Selecione os suplementos</string>
+    <string name="selecioneVolumosos">Selecione os volumosos</string>
+    <string name="esqueciSenha">Esqueci minha senha</string>
+    <string name="orientacao_especificacao_alimentos">É necessário definir o tempo de corte e estação do ano para alguns alimentos. Essa informação é essencial para a formulação correta da dieta.</string>
+    <string name="orientacao_tratorzinho">Confira os alimentos adicionados até o momento. Você pode editar sua lista ou seguir adiante</string>
+</resources>

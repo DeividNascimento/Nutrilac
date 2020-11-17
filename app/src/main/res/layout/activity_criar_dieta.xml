@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.CriarDieta">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/orientacao_selecionar_lote_criar_dieta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Defina o nome da dieta e selecione o lote"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:minWidth="200px"/>
+
+
+        <EditText
+            android:id="@+id/criar_dieta_nome_da_dieta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPersonName"
+            android:hint="Nome da dieta"
+            android:layout_below="@+id/orientacao_selecionar_lote_criar_dieta"/>
+
+        <TextView
+            android:id="@+id/criar_dieta_nome_lote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lote:"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/criar_dieta_nome_da_dieta"
+            android:layout_marginLeft="10dp" />
+
+        <ListView
+            android:id="@+id/lista_lotes_criar_dieta"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/criar_dieta_nome_lote"
+            android:layout_above="@+id/selecionaBtn_confirmar_lote_criar_dieta"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:numColumns="1"
+            android:verticalSpacing="5dp"
+            tools:listitem="@layout/item_lista_lote_criar_dieta"/>
+
+        <Button
+            android:id="@+id/selecionaBtn_confirmar_lote_criar_dieta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:minWidth="200px"
+            android:text="Confirmar" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_drawer_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
